@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validationForm ()">
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" minlength"8" required>
+    <label for="conformpassword"> Conformpassword</label>
+    <input type="password" name="conformpassword" id="conformpassword"minlength "8" required>
+    <button type="button" onclick="validationForm()"> check </button>
+    </form>
+    <script>
+        function validationForm(){
+            var password=document.getElementById('password').value;
+            var conformpassword= document.getElementById('conformpassword').value;
+            if(password!==conformpassword){
+                alert('please Enter valid Password:');
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
+</body>
+</html>

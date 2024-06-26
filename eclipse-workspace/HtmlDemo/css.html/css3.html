@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cornsilk;
+            margin:0% ;
+            padding: 0;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+        }
+        .container{
+            
+        
+            background-color: rgb(204, 135, 135);
+            margin: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px red;
+        }
+        .from-tagg{
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            /* margin-bottom: 10px; */
+            font-weight: lighter;
+        }
+        input[ type="text"]
+        input[type="email"]
+        textarea{
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+      
+        input[type="submit"]{
+            background-color: bisque;
+            color: rgb(25, 82, 133);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[ type="submit"]:hover{
+            background-color: rgb(75, 49, 49);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>CONTACT ME: </h1>
+    <form action="#" method="post">
+    <div class="fom-tagg">
+        <label for="name">Name</label>
+        <input type="text"id="Name" name="name" must required>
+    </div>
+
+
+    <div class="form-tagg">
+        <label for="email">email</label>
+        <input type="email"id ="email" name="email"must required>
+    </div>
+
+    <div class="form-tagg">
+        <label for="message">Massage</label>
+        <textarea name="message" id="message" cols="10" rows="10"> not required</textarea>
+    </div>
+
+
+    <input type="submit" value="submit" src="csss.html">
+
+
+</form>
+</div>
+    
+</body>
+</html>

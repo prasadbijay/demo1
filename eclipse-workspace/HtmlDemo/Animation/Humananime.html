@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+          justify-content: center;
+          align-content: center;
+          height: 100vh;
+          background-color: #030303;
+        }
+        #head{
+            width: 65px;
+            height: 80px;
+            background-color: rgb(235, 186, 122);
+            border-radius: 50%;
+        }
+        #body{
+            width: 79px;
+            height: 150px;
+            background-color: rgb(194, 174, 153);
+            margin: 20px;
+            border: 40px;
+            border-radius: 40%;
+        }
+        .arm{
+            width: 70px;
+            height: 20px;
+            background-color: rgb(223, 236, 236);
+            margin-top: 10px;
+        }
+        #leftArm{
+            transform: rotate(45deg);
+            margin-left: -60px;
+        }
+        #rightArm{
+            transform: rotate(-45deg);
+            margin-left: 40px;
+        }
+        .leg{
+            width: 20px;
+            height: 100px;
+            background-color: #e0e0e0;
+            margin-top: 20px;
+        }
+        #leftLeg{
+            transform: rotate(-10deg);
+            margin-left: 15px;
+        }
+        #rightLeg{
+            transform: rotate(10deg);
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head"></div>
+    <div id="body"></div>
+    <div class="arm" id="leftArm"></div>
+    <div class="arm" id="rightArm"></div>
+    <div class="leg" id="leftLeg"></div>
+    <div class="leg" id="rihtLeg"></div>
+    
+</body>
+</html>
