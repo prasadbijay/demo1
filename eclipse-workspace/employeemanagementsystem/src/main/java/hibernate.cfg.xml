@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.password">bijay</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/employee_management</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        
+        <mapping class="anudipc8274.employeemanagementsystem.Admin"></mapping>
+        <mapping class="anudipc8274.employeemanagementsystem.Attendance"></mapping>
+        <mapping class="anudipc8274.employeemanagementsystem.Department"></mapping>
+        <mapping class="anudipc8274.employeemanagementsystem.Employee"></mapping>
+        <mapping class="anudipc8274.employeemanagementsystem.Leavess"></mapping>
+        <mapping class="anudipc8274.employeemanagementsystem.Payroll"></mapping>
+        <mapping class="anudipc8274.employeemanagementsystem.Role"></mapping>
+    </session-factory>
+</hibernate-configuration>
+
